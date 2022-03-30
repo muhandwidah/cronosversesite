@@ -3,7 +3,7 @@
     <div>
       <navbar id="navbar" />
     </div>
-    <h1>CRONOSVERSE FAQ</h1>
+    <h1 id="projecth1">CRONOSVERSE FAQ</h1>
     <div id="expansioncontainer">
       <v-row justify="center">
         <v-expansion-panels dark inset>
@@ -142,9 +142,120 @@
         </v-expansion-panels>
       </v-row>
     </div>
-    <h1>Our Project Partners</h1>
-    <v-divider></v-divider>
-    <div id="supportcontainer"></div>
+    <v-divider id="divider" ></v-divider>
+    <h1 id="projecth1">Our Project Road Map</h1>
+    <v-divider id="divider"></v-divider>
+    <div>
+    <v-row justify="center">
+      <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+      <v-timeline-item>
+        <span slot="opposite">Phase 1</span>
+        <v-card width="450px" class="elevation-2">
+          <v-card-title class="text-h5">
+            Project Launch
+          </v-card-title>
+          <v-card-text>
+            <ul>
+              <li>The CronosVerse Project Announcement</li>
+              <li>Twitter, Webpage & AMAs</li>
+              <li>Game Concept Release</li>
+              <li>Initial Project Partner Announcements</li>
+            </ul>
+          </v-card-text>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item>
+        <span slot="opposite">Phase 2</span>
+        <v-card width="450px" class="elevation-2">
+          <v-card-title class="text-h5">
+            Initial Land Offering
+          </v-card-title>
+          <v-card-text>
+            <ul>
+              <li>Land Map Release</li>
+              <li>Initial Land Offering/Land Sales Go Live</li>
+              <li>Discord Server</li>
+              <li>Community Engagement (Giveaways, Prizes, Contests)</li>
+            </ul>
+          </v-card-text>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item>
+        <span slot="opposite">Phase 3</span>
+        <v-card width="450px" class="elevation-2">
+          <v-card-title class="text-h5">
+            The CroVilians
+          </v-card-title>
+          <v-card-text>
+            <ul>
+              <li>Secondary Market Land Sales Go Live</li>
+              <li>Crovilians NFT (Citizens of The CronosVerse)</li>
+              <li>Partner Metaverse Teasers</li>
+              <li>Charity Announcements to Fight Homelessness</li>
+            </ul>
+          </v-card-text>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item>
+        <span slot="opposite">Phase 4</span>
+        <v-card width="450px" class="elevation-2">
+          <v-card-title class="text-h5">
+            Alpha Gameplay
+          </v-card-title>
+          <v-card-text>
+            <ul>
+              <li>Land Amalgamations (see FAQ)</li>
+              <li>Web3 Connectivity to Unreal Engine Gameplay</li>
+              <li>Alpha Game Play for Land Owners</li>
+              <li>Road Map 2.0</li>
+            </ul>
+          </v-card-text>
+        </v-card>
+      </v-timeline-item>
+    </v-timeline>
+    </v-row>
+    </div>
+    <v-divider id="divider"></v-divider>
+    <v-row justify="center">
+    <h1 id="projecth1">Our Team</h1>
+    </v-row>
+    <v-divider id="divider"></v-divider>
+      <div id="teamcontainer">
+        <v-row justify="center">
+        <v-card class="mx-auto" max-width="330">
+          <v-img src="https://i.ibb.co/BsdNbv0/Tommy.png" height="400px"></v-img>
+      </v-card>
+      <v-card class="mx-auto" max-width="330">
+          <v-img src="https://i.ibb.co/gT2DmFq/Steve.png" height="400px"></v-img>
+      </v-card>  
+      <v-card class="mx-auto" max-width="330">
+          <v-img src="https://i.ibb.co/9WT2QsC/Ryan.png" height="400px"></v-img>
+      </v-card>  
+      <v-card class="mx-auto" max-width="330">
+          <v-img src="https://i.ibb.co/qjQMjnd/Manny.png" height="400px"></v-img>
+      </v-card>  
+      <v-card class="mx-auto" max-width="330">
+          <v-img src="https://i.ibb.co/sRXvjmg/Muhand.png" height="400px"></v-img>
+      </v-card>  
+      </v-row>
+    </div>
+    <v-divider id="divider"></v-divider>
+    <h1 id="projecth1">Our Project Partners</h1>
+    <v-row justify="center">
+    <div id="supportcontainer">
+      <div id="support">
+      <img src="https://i.ibb.co/yXfL5xF/TopBlok.png" onlick="topblok()" class="partnersimg">
+      <img src="https://i.ibb.co/LCXNn68/crodex.png" class="partnersimg">
+      <img src="https://i.ibb.co/ZH5dLkp/The-Cronicle.png" class="partnersimg">
+      <img src="https://i.ibb.co/jysV8jC/Primate-Cronos.png" class="partnersimg">
+      <img src="https://i.ibb.co/PmKx9y5/Cro-Skulls.jpg" class="partnersimg">
+      <img src="https://i.ibb.co/6Xtjkqc/cronos-nana.png" class="partnersimg">
+      <img src="https://i.ibb.co/r35Q4Vr/Cronos-Chimp-Club.jpg" class="partnersimg">
+      <img src="https://i.ibb.co/dGnnGmX/CroMoon.png" class="partnersimg">
+      <img src="https://i.ibb.co/ncZJt4Z/Crobots-Logo.png" class="partnersimg">
+      </div>
+    </div>
+    </v-row>
   </v-app>
 </template>
 
@@ -168,6 +279,42 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+v-card-title {
+  font-family: "Russo One", sans-serif;
+}
+
+span {
+  font-family: "Russo One", sans-serif;
+  font-size: 32px;
+}
+
+li {
+  font-family: "Russo One", sans-serif;
+  font-size: 15px;
+}
+
+#support {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#projecth1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#supportcontainer{
+  background-color: black;
+}
+
+.partnersimg {
+  height: 250px;
+  width: 300px;
+  align-items: center;
+}
+
 #navbar {
   background-color: black;
 }
@@ -181,5 +328,10 @@ h1 {
   color: black;
   font-family: "Russo One", sans-serif;
   font-size: 50px;
+}
+
+#divider {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 </style>

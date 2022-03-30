@@ -17,6 +17,12 @@
           <v-btn> Enter <v-icon dark left> mdi-arrow-right </v-icon></v-btn>
         </router-link>
       </div>
+      <iframe id="cronosvideo" 
+        width="756" height="425.25" 
+        src="https://www.youtube-nocookie.com/embed/SPm15Dvvpy0" 
+        title="YouTube video player" frameborder="10" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
     </div>
   </v-app>
 </template>
@@ -41,6 +47,12 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+#cronosvideo {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+
 #bg {
   height: 100vh;
 }

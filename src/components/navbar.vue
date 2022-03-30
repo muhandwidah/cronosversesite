@@ -18,6 +18,9 @@
       <router-link :to="{ path: '/faq' }">
         <v-btn id="navbtn" class="white--text" text color="white">faq</v-btn>
       </router-link>
+      <router-link :to="{ path: '/token' }">
+        <v-btn id="navbtn" class="white--text" text color="white">Token</v-btn>
+      </router-link>
     </div>
   </div>
 </template>
@@ -41,7 +44,7 @@ export default {
   margin: auto;
 }
 #navbtn {
-  left: 41.5%;
+  left: 39%;
 }
 a:link {
   text-decoration: none;

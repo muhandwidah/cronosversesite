@@ -57,6 +57,10 @@ import navbar from "@/components/navbar.vue";
 
 export default {
   name: "about",
+    
+    data: () => ({
+
+  }),
 
   mounted() {},
 
@@ -129,4 +133,5 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+
 </style>

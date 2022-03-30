@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import FAQ from '../views/FAQ.vue'
 import Landtiles from '../views/Landtiles.vue'
-
+import Token from '../views/Token.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +28,11 @@ const routes = [
     path: '/landtiles',
     name: 'Landtiles',
     component: Landtiles
+  },
+  {
+    path: '/token',
+    name: 'Token',
+    component: Token
   },
 ]
 
